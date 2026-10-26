@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
