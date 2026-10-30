@@ -83,6 +83,28 @@ main h1 {
     margin: 10px auto;
 }
 
+.card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sobre-brasil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sobre-brasil img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.sobre-brasil p {
+    line-height: 1.5;
+    margin: 0;
+}
+
 footer {
     background-color: #204f70;
     color: white;
