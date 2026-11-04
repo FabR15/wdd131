@@ -1,19 +1,23 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+@media screen and (min-width: 768px) {
 
-#menu {
-    display: none;
-}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-#navegacao {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+    #menu {
+        display: none;
+    }
 
-#galeria {
-    grid-template-columns: repeat(3, 1fr);
+    #navegacao {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

@@ -24,6 +24,11 @@ h2 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: #204f70;
     color: white;
