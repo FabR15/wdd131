@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu {
+    display: none;
+}
+
+#navegacao {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#galeria {
+    grid-template-columns: repeat(3, 1fr);
+}
