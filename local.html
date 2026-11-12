@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o Rio de Janeiro, suas características, localização e clima.">
+    <meta name="author" content="Fabio Rocha">
+
+    <title>Rio de Janeiro | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <script src="scripts/local.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Rio de Janeiro</h1>
+
+    </header>
+    <main>
+        <picture>
+            <source srcset="imagens/rio-pequeno.webp" media="(max-width: 500px)">
+           <img src="imagens/rio-grande.webp"
+            alt="Vista panorâmica do Rio de Janeiro com o Cristo Redentor"
+            width="1920" height="1080">
+        </picture>
+        <section>
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Brazil</p>
+            <p><strong>State:</strong> Rio de Janeiro</p>
+            <p><strong>Region:</strong> Southeast</p>
+            <p><strong>Language:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real</p>
+            <p><strong>Country Capital:</strong> Brasília</p>
+            <p><strong>State Capital:</strong> Rio de Janeiro</p>
+
+        </section>
+
+        <section>
+            <h2>Weather</h2>
+
+            <p><strong>Temperature:</strong> 28 °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="sensacaoTermica">N/A</span></p>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>© <span id="anoatual"></span> Fabio Rocha da Silva | São Paulo, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+
+
+</html>
