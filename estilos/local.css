@@ -16,17 +16,13 @@ body {
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-body {
     margin: 0;
     font-family: var(--fonte-principal);
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
