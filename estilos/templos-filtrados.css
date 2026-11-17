@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -5,11 +6,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: #f4f6f8;
 }
 
 header {
     background-color: #204f70;
-    color: white;
+    color: #ffffff;
     padding: 15px;
     text-align: center;
 }
@@ -17,11 +19,17 @@ header {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 h2 {
     text-align: center;
+}
+
+main h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #204f70;
 }
 
 nav {
@@ -29,42 +37,12 @@ nav {
     flex-direction: column;
 }
 
-footer {
-    background-color: #204f70;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-#galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-figure {
-    margin: 0;
-    text-align: center;
-}
-
-figure img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-figcaption {
-    padding: 10px;
-    font-weight: bold;
-}
-
 #menu {
     display: block;
     margin: 10px auto;
     font-size: 1.5rem;
     background: none;
-    color: white;
+    color: #ffffff;
     border: none;
     cursor: pointer;
 }
@@ -76,7 +54,7 @@ figcaption {
 }
 
 #navegacao a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 8px;
 }
@@ -89,24 +67,6 @@ figcaption {
     display: flex;
 }
 
-body {
-    background-color: #f4f6f8;
-}
-
-/* Área principal */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-
-main h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    color: #204f70;
-}
-
 #galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -115,17 +75,17 @@ main h2 {
 
 #galeria figure {
     margin: 0;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 3px 10px #0000001a;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #galeria figure:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 18px #00000026;
 }
 
 #galeria img {
@@ -145,9 +105,17 @@ main h2 {
     margin: 12px 15px;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #444;
+    color: #444444;
 }
 
 #galeria p:last-child {
     margin-bottom: 20px;
+}
+
+footer {
+    background-color: #204f70;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
