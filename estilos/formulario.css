@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #123b2a;
+    --secondary-color: #e8f0eb;
+    --accent-color: #2f6b4f;
+    --text-color: #222222;
+    --background-color: #f4f6f4;
+    --border-color: #c7cec9;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 700px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+form {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group > label,
+fieldset legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font: inherit;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset legend {
+    width: 100%;
+}
+
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.rating-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.rating-options span {
+    font-size: 1.1rem;
+    letter-spacing: -2px;
+    color: #111111;
+}
+
+.rating-options input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0.6rem 0;
+    cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.optional {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+input[type="submit"]:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+.confirmation {
+    background-color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation h2 {
+    color: var(--primary-color);
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.confirmation a:hover {
+    background-color: var(--accent-color);
+}
+
+.counter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.required {
+    color: #b42318;
+    font-weight: bold;
+}
+
+.required-note {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 0 1.5rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .rating-options span {
+        font-size: 1.3rem;
+    }
+
+    .rating-options input[type="radio"] {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        max-width: 750px;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+}

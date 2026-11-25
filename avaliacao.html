@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmação de envio da avaliação do produto">
+    <meta name="author" content="Fabio Rocha">
+    <title>Avaliação Enviada | WDD 131</title>
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/avaliacao.js" defer></script>
+
+    <style>
+        .confirmation {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .confirmation h2 {
+            color: #204f70;
+        }
+
+        .confirmation p {
+            margin: 1rem 0;
+        }
+
+        .counter {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+
+        .confirmation a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #204f70;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .confirmation a:hover {
+            background-color: #163750;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2 id="confirmation-message">Obrigado pela sua avaliação!</h2>
+
+            <p>
+                Sua avaliação foi enviada com sucesso.
+                Agradecemos por compartilhar sua experiência.
+            </p>
+
+            <p class="counter">
+                Avaliações concluídas:
+                <span id="review-count">0</span>
+            </p>
+
+            <a href="formulario.html">Enviar outra avaliação</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Fabio Rocha</p>
+        <p>WDD 131 | Última Modificação: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.querySelector("#current-year").textContent = new Date().getFullYear();
+        document.querySelector("#last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
