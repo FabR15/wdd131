@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de avaliação de produto">
+    <meta name="description" content="Avalie nossos produtos, compartilhe sua experiência, escolha uma classificação e conte quais recursos foram mais úteis para você.">
     <meta name="author" content="Fabio Rocha">
     <title>Avaliação do Produto | WDD 131</title>
 
     <link rel="stylesheet" href="estilos/formulario.css">
     <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,22 +39,22 @@
 
                         <label for="rating-2">
                             <span>☆☆</span>
-                            <input type="radio" id="rating-2" name="classificacao" value="2">
+                            <input type="radio" id="rating-2" name="classificacao" value="2" required>
                         </label>
 
                         <label for="rating-3">
                             <span>☆☆☆</span>
-                            <input type="radio" id="rating-3" name="classificacao" value="3">
+                            <input type="radio" id="rating-3" name="classificacao" value="3" required>
                         </label>
 
                         <label for="rating-4">
                             <span>☆☆☆☆</span>
-                            <input type="radio" id="rating-4" name="classificacao" value="4">
+                            <input type="radio" id="rating-4" name="classificacao" value="4" required>
                         </label>
 
                         <label for="rating-5">
                             <span>☆☆☆☆☆</span>
-                            <input type="radio" id="rating-5" name="classificacao" value="5">
+                            <input type="radio" id="rating-5" name="classificacao" value="5" required>
                         </label>
                     </div>
                 </fieldset>
@@ -117,9 +118,5 @@
         <p>WDD 131 | Última Modificação: <span id="last-modified"></span></p>
     </footer>
 
-    <script>
-        document.querySelector("#current-year").textContent = new Date().getFullYear();
-        document.querySelector("#last-modified").textContent = document.lastModified;
-    </script>
 </body>
 </html>    
